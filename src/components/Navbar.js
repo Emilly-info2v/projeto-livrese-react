@@ -6,6 +6,7 @@ import ButtonUp from './ButtonUp'
 import './Navbar.css';
 import { IconContext } from 'react-icons/lib'
 import ButtonIn from './ButtonIn'
+import Section from './Section'
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -66,6 +67,7 @@ function Navbar() {
           </div>
       </div>
       </IconContext.Provider>
+      <Section />
     </> 
   )
 }
