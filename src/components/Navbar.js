@@ -2,7 +2,10 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaBookOpen } from 'react-icons/fa'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import { Button } from '../Button';
+import ButtonUp from './ButtonUp'
+import './Navbar.css';
+import { IconContext } from 'react-icons/lib'
+import ButtonIn from './ButtonIn'
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -23,9 +26,10 @@ function Navbar() {
 
   return(
     <>
+    <IconContext.Provider value={{color: '#fff'}}>
       <div className='navbar'>
           <div className='navbar-container container'>
-            <Link to='/' className='navbar-logo'>
+            <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
               <FaBookOpen className='navbar-icon' />
               LIVRESE
             </Link>
@@ -34,37 +38,34 @@ function Navbar() {
             </div>   
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
               <li className='nav-item'>
-                <Link to='/' className='nav-links'>
-                  Home
+                <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                  Sobre Nós
                 </Link>
               </li>
               <li className='nav-item'>
-                <Link to='/services' className='nav-links'>
-                  Services
+                <Link to='/contatos' className='nav-links' onClick={closeMobileMenu}>
+                  Contatos
                 </Link>
               </li>
               <li className='nav-item'>
-                <Link to='/products' className='nav-links'>
-                  Products
+                <Link to='/registros' className='nav-links' onClick={closeMobileMenu}>
+                  Registros
                 </Link>
               </li>
-              <li className='nav-btn'>
-                  {button ? (
-                    <Link to='/sign-up' className='btn-link'>
-                      <Button buttonStyle='btn--outline'>Sign up</Button>  
-                    </Link>
-                  ) : (
-                    <Link to='/sign-up' className='btn-link'>
-                      <Button buttonStyle='btn--outline'
-                      buttonSize='btn--mobile'>
-                      
-                      Sign up</Button>
-                    </Link>
-                  )}
+              <li className='nav-btn'  onClick={closeMobileMenu}>
+                <Link to='/sign-in'>
+                  <ButtonIn />
+                </Link>
+              </li>
+              <li className='nav-btn'  onClick={closeMobileMenu}>
+                <Link to='/sign-up'>
+                  <ButtonUp />
+                </Link>
               </li>
             </ul> 
           </div>
       </div>
+      </IconContext.Provider>
     </> 
   )
 }
