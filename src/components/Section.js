@@ -6,16 +6,22 @@ function Section() {
     <div>
       <section className='home'>
                 <div className='home-text'>
-                    <h4 className='text-h4'>Bem vindo ao Livre-se</h4>
-                    <h1 className='text-h1'>A melhor plataforma de doação de livros</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, molestias? Nam nisi similique numquam natus!</p>
-                    <button className='home-btn'>Lorem, ipsum.</button>
-                </div>
-                {/* <div class="home-img">
-                    <img src="img/img1.png" alt="imagem">
+                    {/* <h4 className='text-h4'>olá, bem-vindo ao livre-se...</h4> */}
+                    <h1 className='text-h1'>Olá, bem-vindo ao livre-se...</h1>
+                    <p className='prg'>Se você tem livros antigos ou que ja leu mais de mil vezes, 
+                      ou está a procura de uma nova aquisição, aqui é o lugar certo!
+                      Livre-se já!</p>
+                    <button className='home-btn1'>ENTRE</button> OU
+                    <button className='home-btn2'>CADASTRE - SE</button>
 
-                </div> */}
+                    <div> 
+                      <div className='home-img'></div>
+                      <div className='home-img2'></div>
+                      <div className='home-img3'></div>
+                    </div>   
+                </div>
                 
+
             </section>
     </div>
   )
