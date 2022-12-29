@@ -7,6 +7,8 @@ import './Navbar.css';
 import { IconContext } from 'react-icons/lib'
 import ButtonIn from './ButtonIn'
 import Section from './Section'
+import Section2 from './Section2'
+import Section3 from './Section3'
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -68,6 +70,8 @@ function Navbar() {
       </div>
       </IconContext.Provider>
       <Section />
+      <Section2 />
+      <Section3 />
     </> 
   )
 }
