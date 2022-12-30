@@ -6,9 +6,6 @@ import ButtonUp from './ButtonUp'
 import './Navbar.css';
 import { IconContext } from 'react-icons/lib'
 import ButtonIn from './ButtonIn'
-import Section from './Section'
-import Section2 from './Section2'
-import Section3 from './Section3'
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -36,25 +33,42 @@ function Navbar() {
               <FaBookOpen className='navbar-icon' />
               LIVRESE
             </Link>
+
             <div className='menu-icon' onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars /> }
-            </div>   
+            </div>  
+
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
               <li className='nav-item'>
                 <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                  Sobre Nós
+                  Home
                 </Link>
               </li>
+
               <li className='nav-item'>
-                <Link to='/contatos' className='nav-links' onClick={closeMobileMenu}>
-                  Contatos
+                <Link to='/projeto' className='nav-links' onClick={closeMobileMenu}>
+                  Projeto
                 </Link>
               </li>
+
               <li className='nav-item'>
-                <Link to='/registros' className='nav-links' onClick={closeMobileMenu}>
-                  Registros
+                <Link to='/destaques' className='nav-links' onClick={closeMobileMenu}>
+                  Destaques
                 </Link>
               </li>
+
+              <li className='nav-item'>
+                <Link to='/avaliacoes' className='nav-links' onClick={closeMobileMenu}>
+                  Avaliações
+                </Link>
+              </li>
+
+              <li className='nav-item'>
+                <Link to='/parcerias' className='nav-links' onClick={closeMobileMenu}>
+                  Parcerias
+                </Link>
+              </li>
+
               <li className='nav-btn'  onClick={closeMobileMenu}>
                 <Link to='/sign-in'>
                   <ButtonIn />
@@ -69,9 +83,6 @@ function Navbar() {
           </div>
       </div>
       </IconContext.Provider>
-      <Section />
-      <Section2 />
-      <Section3 />
     </> 
   )
 }

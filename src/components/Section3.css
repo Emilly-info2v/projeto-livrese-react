@@ -32,3 +32,10 @@
 .home-text p{
     margin-bottom: 4rem;
 }
+.btn-teste{
+    padding: 15px;
+    cursor: pointer;
+    background: orange;
+    border: none;
+    border-radius: 12px;
+}
