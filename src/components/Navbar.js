@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 import { FaBookOpen } from 'react-icons/fa'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import ButtonUp from './ButtonUp'
+import ButtonIn from './ButtonIn'
 import './Navbar.css';
 import { IconContext } from 'react-icons/lib'
-import ButtonIn from './ButtonIn'
 import Section from './Section'
 import SectionProjeto from './SectionProjeto'
 import SectionDestaques from './SectionDestaques'
@@ -14,20 +14,9 @@ import SectionParcerias from './SectionParcerias'
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false)
-
-  const showButton = () => {
-    if(window.innerWidth <= 960) {
-      setButton(false)
-    } else{
-      setButton(true)
-    }
-  }
-
-  window.addEventListener('resize', showButton);
 
   return(
     <>

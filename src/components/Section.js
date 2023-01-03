@@ -1,8 +1,8 @@
 import React from 'react'
 import './Section.css'
 import { Link } from 'react-router-dom'
-import ButtonIn from './ButtonIn'
-import ButtonUp from './ButtonUp'
+import ButtonInSection from './ButtonInSection'
+import ButtonUpSection from './ButtonUpSection'
 
 
 function Section() {
@@ -18,11 +18,11 @@ function Section() {
 
                       <ul className='btn-section'>
                           <li><Link to='/login'>
-                            <ButtonIn />
+                            <ButtonInSection />
                           </Link></li> OU
                           <li>
                           <Link to='/cadastro'>
-                            <ButtonUp />
+                            <ButtonUpSection />
                           </Link>
                           </li>
                       </ul> 

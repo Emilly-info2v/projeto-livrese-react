@@ -1,15 +1,15 @@
-.in{
+.up-section{
     margin: 5px;
-    background: #d3650b;
-    padding: 8px 16px;
-    border-radius: 4px;
+    background: azure;
+    padding: 18px 20px;
+    border-radius: 14px;
     outline: none;
-    border: 1px solid #d3650b;
-    color: #fff;
+    border: 1px solid #1c2237;
+    color: #1c2237;
     cursor: pointer;
     white-space: nowrap;
 }
-.in:hover {
+.up-section:hover {
     border: 1px solid white;
     background-color: #1c2237;
     color: white;

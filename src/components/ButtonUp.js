@@ -1,7 +1,8 @@
 import './ButtonUp.css'
 
-export default function ButtonUp() {
+function ButtonUp() {
     return (
         <button className='up'>CADASTRAR-SE</button>
     )
 }
+export default ButtonUp
