@@ -6,6 +6,11 @@ import ButtonUp from './ButtonUp'
 import './Navbar.css';
 import { IconContext } from 'react-icons/lib'
 import ButtonIn from './ButtonIn'
+import Section from './Section'
+import SectionProjeto from './SectionProjeto'
+import SectionDestaques from './SectionDestaques'
+import SectionAvaliacoes from './SectionAvaliacoes'
+import SectionParcerias from './SectionParcerias'
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -70,19 +75,25 @@ function Navbar() {
               </li>
 
               <li className='nav-btn'  onClick={closeMobileMenu}>
-                <Link to='/sign-in'>
+                <Link to='/login'>
                   <ButtonIn />
                 </Link>
               </li>
               <li className='nav-btn'  onClick={closeMobileMenu}>
-                <Link to='/sign-up'>
+                <Link to='/cadastro'>
                   <ButtonUp />
                 </Link>
               </li>
             </ul> 
           </div>
       </div>
+      
       </IconContext.Provider>
+      <Section />
+      <SectionProjeto />
+      <SectionDestaques />
+      <SectionAvaliacoes/>
+      <SectionParcerias />
     </> 
   )
 }

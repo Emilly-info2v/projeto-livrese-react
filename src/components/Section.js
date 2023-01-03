@@ -1,8 +1,12 @@
 import React from 'react'
 import './Section.css'
+import { Link } from 'react-router-dom'
+import ButtonIn from './ButtonIn'
+import ButtonUp from './ButtonUp'
 
 
 function Section() {
+
   return (
     <div>
       <section className='home'>
@@ -11,8 +15,17 @@ function Section() {
                     <p>Se você tem livros antigos ou que ja leu mais de mil vezes, 
                       ou está a procura de uma nova aquisição, aqui é o lugar certo!
                       Livre-se já!</p>
-                    <button className='home-btn1'>ENTRE</button> OU
-                    <button className='home-btn2'>CADASTRE - SE</button>
+
+                      <ul className='btn-section'>
+                          <li><Link to='/login'>
+                            <ButtonIn />
+                          </Link></li> OU
+                          <li>
+                          <Link to='/cadastro'>
+                            <ButtonUp />
+                          </Link>
+                          </li>
+                      </ul> 
                   </div>
             </section>
     </div>

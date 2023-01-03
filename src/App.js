@@ -1,11 +1,9 @@
 import React from 'react';
-import { useState,useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
-import Section from './components/Section';
-import Section2 from './components/Section2';
-import Section3 from './components/Section3';
+import Login from './components/pages/Login';
+import Cadastro from './components/pages/Cadastro';
 
 function App() {
   return (
@@ -13,13 +11,11 @@ function App() {
       <Router>
           <Routes>
             <Route path='/' element={<Navbar />}/>
+            <Route path='/login' element={<Login />}/>
+            <Route path='/cadastro' element={<Cadastro />}/>
           </Routes>
-      </Router>
-      <Section />
-      <Section2 />
-      <Section3 />
+      </Router>  
     </>
-
   );
 }
 
