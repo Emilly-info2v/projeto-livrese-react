@@ -3,8 +3,8 @@ import { MdEmail, MdLock } from 'react-icons/md'
 import { HiEyeOff, HiEye } from "react-icons/hi";
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import './Login.css'
 import Logo from'./../imgs/logo-livrese.jpeg'
+import './Login.css'
 
 function Login() {
   const [email,setEmail] = useState("")
@@ -58,7 +58,7 @@ function Login() {
 
             <div className='text-center'>
               <span className='txt-1'>Não tenho uma conta? </span>
-              <Link to='/login'className='txt-2'>Criar conta </Link>
+              <Link to='/cadastro'className='txt-2'>Criar conta </Link>
             </div>
 
           </div>

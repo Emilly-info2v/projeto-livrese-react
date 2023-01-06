@@ -1,65 +1,88 @@
 import React from 'react'
-import { FaBookOpen } from 'react-icons/fa'
-import { useState } from 'react'
+// import { MdEmail, MdLock } from 'react-icons/md'
+// import { HiEyeOff, HiEye } from "react-icons/hi";
+// import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import LogoIcon from'./../imgs/icon.png'
 import './Cadastro.css'
 
 function Cadastro() {
-  const [email,setEmail] = useState("")
-  const [password,setPassword] = useState("")
-  const [name,setName] = useState("")
-
   return (
-    <div className='container-2'>
-      <div className='container-login'>
-        <div className='wrap-login'>
-          <form className='login-form'>
-            <span className='title-login'>Faça o seu cadastro no Livre - se</span>
-            <span className='title-login'><FaBookOpen className='login-icon' /></span>
-
-            <div className='wrap-input'>
-              <input 
-                className={name !== "" ? 'has-val input' : 'input'} 
-                type= "text"
-                value={name}
-                onChange={e => setName(e.target.value)}
-              />
-              <span className='focus-input' data-placeholder='Nome completo'></span>
+    <div className='body'>
+    <div className='contaneir'>
+      <div className='form'>
+        <form>
+          <div className='form-header'>
+            <div className='title'>
+              <h1>Faça seu cadastro</h1>
+              <span><img src={LogoIcon} alt=''className='img-icon'/></span>
             </div>
+          </div>
+          <div className='input-group'>
+                <div className='input-box'>
+                  <label>Primeiro nome</label>
+                  <input className='first-name'
+                  type='text'
+                  placeholder='Digite seu primeiro nome'
+                  required
+                  />
+                </div>
+                <div className='input-box'>
+                  <label>Sobrenome</label>
+                  <input className='last-name'
+                  type='text'
+                  placeholder='Digite seu sobrenome'
+                  required
+                  />
+                </div>
+                <div className='input-box'>
+                  <label>E-mail</label>
+                  <input className='email'
+                  type='email'
+                  placeholder='Digite seu email'
+                  required
+                  />
+                </div>
+                
+                <div className='input-box'>
+                  <label>Telefone</label>
+                  <input className='number'
+                  type='tel'
+                  placeholder='(xx) xxxxx-xxxx'
+                  required
+                  />
+                </div>
 
-            <div className='wrap-input'>
-              <input 
-                className={email !== "" ? 'has-val input' : 'input'} 
-                type= "text"
-                value={email}
-                onChange={e => setEmail(e.target.value)}
-              />
-              <span className='focus-input' data-placeholder='Email'></span>
-            </div>
+                <div className='input-box'>
+                  <label>Senha</label>
+                  <input className='password'
+                  type='password'
+                  placeholder='Digite sua senha'
+                  required
+                  />
+                </div>
 
-            <div className='wrap-input'>
-              <input 
-              className={password !== "" ? 'has-val input' : 'input'} 
-              type= "password"
-              value={password}
-              onChange={e => setPassword(e.target.value)}
-              />
-              <span className='focus-input' data-placeholder='Passaword'></span>
-            </div>
-            
-            <div className='container-login-form-btn'>
-              <button className='login-form-btn'>Cadastrar</button>
-            </div>
+                <div className='input-box'>
+                  <label>Confirme a senha</label>
+                  <input className='password'
+                  type='password'
+                  placeholder='Digite sua senha novamente'
+                  required
+                  />
+                </div>
 
-            <div className='text-center'>
-              <span className='txt-1'>Já tenho uma conta? </span>
-              <Link to='/login'className='txt-2'>Faça login </Link>
+              </div>
+          <div className='btn-cadastrar'>
+            <button><Link>Cadastrar</Link></button>
+          </div>
+        </form>
+            <div className='text'>
+              <span className='txt-1'>Tenho uma conta? </span>
+              <Link to='/login'className='txt-2'>Fazer login </Link>
             </div>
-
-          </form>
-        </div>
       </div>
     </div>
+    </div> 
   )
 }
 
