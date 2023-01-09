@@ -58,7 +58,7 @@ function Login() {
 
             <div className='text-center'>
               <span className='txt-1'>Não tenho uma conta? </span>
-              <Link to='/login'className='txt-2'>Criar conta </Link>
+              <Link to='/cadastro'className='txt-2'>Criar conta </Link>
             </div>
 
           </div>
