@@ -15,7 +15,7 @@ function Cadastro() {
           <div className='form-header'>
             <div className='title'>
               <h1>Faça seu cadastro</h1>
-              <span><img src={LogoIcon} alt=''className='img-icon'/></span>
+                <span><img src={LogoIcon} alt=''className='img-icon'/></span>
             </div>
           </div>
           <div className='input-group'>
