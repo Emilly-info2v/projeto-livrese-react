@@ -1,13 +1,16 @@
 .in-section{
-    margin: 5px;
+    margin: 7px;
     background: #d3650b;
-    padding: 18px 20px;
-    border-radius: 14px;
+    padding: 10px 20px;
+    border-radius: 18px;
     outline: none;
     border: 1px solid #d3650b;
     color: #fff;
     cursor: pointer;
     white-space: nowrap;
+}
+.in-section svg{
+    margin-left: 0.8rem;
 }
 .in-section:hover {
     border: 1px solid white;
