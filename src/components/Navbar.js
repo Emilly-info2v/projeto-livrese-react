@@ -11,6 +11,7 @@ import SectionProjeto from './SectionProjeto'
 import SectionDestaques from './SectionDestaques'
 import SectionAvaliacoes from './SectionAvaliacoes'
 import SectionParcerias from './SectionParcerias'
+import Footer from './Footer'
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -83,6 +84,7 @@ function Navbar() {
       <SectionDestaques />
       <SectionAvaliacoes/>
       <SectionParcerias />
+      <Footer/>
     </> 
   )
 }
