@@ -15,7 +15,7 @@ function Section() {
   return (
     <section>
       <div className='container-home'>
-        <img className='img-library' src={Library}/>
+        <img className='img-library' src={Library} alt='biblioteca'/>
         <div className='container-text'>
             <h1 className='text-h1'>OLÁ, BEM-VINDO AO LIVRE-SE...</h1>
             <p className='text-p'>Se você tem livros antigos ou que ja leu mais de 
@@ -32,13 +32,13 @@ function Section() {
         </div>  
 
         <div className='container-imgs'>
-          <img className='img-monica' src={Monica}/>
-          <img className='img-ingles' src={Ingles}/>
-          <img className='img-harry' src={Harry}/>
+          <img className='img-monica' src={Monica} alt='monica'/>
+          <img className='img-ingles' src={Ingles} alt='ingles'/>
+          <img className='img-harry' src={Harry} alt='harry'/>
         </div>
       </div>
         <div className='container-onda'>
-          <img className='img-onda' src={Onda}/>
+          <img className='img-onda' src={Onda} alt='onda  '/>
         </div>
     </section>
   )

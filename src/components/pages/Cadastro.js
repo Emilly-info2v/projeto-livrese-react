@@ -4,85 +4,31 @@ import React from 'react'
 // import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import LogoIcon from'./../imgs/icon.png'
+import Logo from './../imgs/logo-livrese.jpeg'
 import './Cadastro.css'
 
 function Cadastro() {
   return (
-    <div className='body'>
-    <div className='contaneir'>
-      <div className='form'>
-        <form>
-          <div className='form-header'>
-            <div className='title'>
-              <h1>Faça seu cadastro</h1>
-                <span><img src={LogoIcon} alt=''className='img-icon'/></span>
-            </div>
+    <>
+      <div className='section'>
+        <div className='fundo'>
+        <nav><img className='img-logo1' src={Logo} /></nav>
+
+        <div className='tela-login'>
+          <div className='image'></div>
+          <div className='form'></div>
+        </div>
+        <div className='footer-1'> 
+          <div className='footer-item'>
+            <div className='item-3-f'>F</div>
+            <div className='item-3-i'>I</div>
+            <div className='item-3-t'>T</div>
           </div>
-          <div className='input-group'>
-                <div className='input-box'>
-                  <label>Primeiro nome</label>
-                  <input className='first-name'
-                  type='text'
-                  placeholder='Digite seu primeiro nome'
-                  required
-                  />
-                </div>
-                <div className='input-box'>
-                  <label>Sobrenome</label>
-                  <input className='last-name'
-                  type='text'
-                  placeholder='Digite seu sobrenome'
-                  required
-                  />
-                </div>
-                <div className='input-box'>
-                  <label>E-mail</label>
-                  <input className='email'
-                  type='email'
-                  placeholder='Digite seu email'
-                  required
-                  />
-                </div>
-                
-                <div className='input-box'>
-                  <label>Telefone</label>
-                  <input className='number'
-                  type='tel'
-                  placeholder='(xx) xxxxx-xxxx'
-                  required
-                  />
-                </div>
-
-                <div className='input-box'>
-                  <label>Senha</label>
-                  <input className='password'
-                  type='password'
-                  placeholder='Digite sua senha'
-                  required
-                  />
-                </div>
-
-                <div className='input-box'>
-                  <label>Confirme a senha</label>
-                  <input className='password'
-                  type='password'
-                  placeholder='Digite sua senha novamente'
-                  required
-                  />
-                </div>
-
-              </div>
-          <div className='btn-cadastrar'>
-            <button><Link>Cadastrar</Link></button>
-          </div>
-        </form>
-            <div className='text'>
-              <span className='txt-1'>Tenho uma conta? </span>
-              <Link to='/login'className='txt-2'>Fazer login </Link>
-            </div>
+          <div className='info-footer'>Info • Suporte</div>
+        </div>
+        </div>
       </div>
-    </div>
-    </div> 
+    </>
   )
 }
 

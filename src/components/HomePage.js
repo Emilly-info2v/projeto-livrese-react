@@ -4,7 +4,7 @@ import { FaBookOpen } from 'react-icons/fa'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import ButtonUp from './ButtonUp'
 import ButtonIn from './ButtonIn'
-import './Navbar.css';
+import './HomePage.css';
 import { IconContext } from 'react-icons/lib'
 import Section from './Section'
 import SectionProjeto from './SectionProjeto'
@@ -13,7 +13,7 @@ import SectionAvaliacoes from './SectionAvaliacoes'
 import SectionParcerias from './SectionParcerias'
 import Footer from './Footer'
 
-function Navbar() {
+function HomePage() {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
@@ -89,4 +89,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default HomePage
