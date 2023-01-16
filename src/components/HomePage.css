@@ -1,155 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,200;1,300;1,500;1,600&display=swap');
 
-
-/* .navbar {
-  background: #1c2237;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 999;
+/* navbar */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  height: 80px;
-}
-
-.container {
-  z-index: 1;
-  width: 100%;
-  max-width: 1300px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 50px;
-  padding-left: 50px;
-}
-
-.navbar-logo {
-  color: #fff;
-  justify-self: start;
-  cursor: pointer;
+.nav-links a{
   text-decoration: none;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
+  color: black;
+  
 }
 
-.navbar-icon {
-  margin-right: 0.5rem;
+nav{
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background: #F2F3F5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  z-index: 20;
 }
-
-.nav-menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-  text-align: center;
-  justify-content: end;
+.nav-items{
+    padding: 16px;
+    border: 1px solid #F2F3F5;
 }
-
-.nav-item {
-  height: 80px;
-  border-bottom: 2px solid transparent;
-}
-
-.nav-item:hover {
+.nav-items:hover{
   border-bottom: 2px solid #f00946;
 }
-
-.nav-links {
-  color: #fff;
+nav{
+  padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  height: 100%;
+  justify-content: space-between;
 }
-
-.fa-bars {
-  color: #fff;
-}
-
-.menu-icon {
-  display: none;
-}
-
-@media screen and (max-width: 960px) {
-  .NavbarItems {
-    position: relative;
-  }
-
-  .nav-menu {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 90vh;
-    position: absolute;
-    top: 80px;
-    left: -100%;
-    opacity: 1;
-    transition: all 0.5s ease;
-  }
-
-  .nav-menu.active {
-    background: #1c2237;
-    left: 0;
-    opacity: 1;
-    transition: all 0.6s ease;
-    z-index: 1;
-  }
-
-  .nav-links {
-    text-align: center;
-    padding: 2rem;
-    width: 100%;
-    display: table;
-  }
-
-  .nav-links:hover {
-    color: #f00946;
-    transform: scale(1.2);
-    transition: all 0.3s ease;
-  }
-
-  .nav-item:hover {
-    border: none;
-  }
-
-  .nav-item {
-    width: 100%;
-  }
-
-  .navbar-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(25%, 50%);
-  }
-
-  .menu-icon {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-  }
-
-  .fa-times {
-    color: #fff;
-    font-size: 2rem;
-  }
-
-  .nav-btn {
+.navigation{
+    list-style: none;
+    gap: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
+}
+.baby{
+  width: 70px;
+}
+#section-3{
+  width: 100%;
+  height: 100vh;
+  background: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#section-3{
+  background: red;
+}
+
+/* estilos da section home */
+
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:wght@300;400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    list-style: none;
+    text-decoration: none;
+}
+#section-home{
     width: 100%;
-    height: 120px;
+    height: 100vh;
+    background: royalblue;
+}
+.container-home{
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+.container-text{
+    margin-top: 132px;
+    position: relative;
+    width: 50%;
+    margin-left: 312px;
+    height: 100%;
+    z-index: 10;
+}
+.container-imgs{
+    width: 50%;
+    height: 100%;
+    display: flex;
+
+}
+.img-monica,
+.img-ingles,
+.img-harry{
+    width: 20%;
+    height: 50%;
+    z-index: 10;
+}
+.img-monica{
+    margin-top: 132px;
+}
+.img-ingles{
+    margin-top: 250px;
+}
+.img-harry{
+    margin-top: 320px;
+}
+.img-library{
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    z-index: 1;
+}
+.container-onda{
+    width: 100%;
+    height: 50%;
+}
+.img-onda{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 16;
+}
+.text-h1{
+    display: flex;
+    width: 60%;
+    font-size: 48px;
+    font-family: 'Averia Libre';
+    font-weight: 100;
+    color: white;
+}
+.text-p{
+    color: #c1c1c1;
+    width: 290px;
+    font-size: 12px;
+    font-weight: lighter;
+    font-family: 'Montserrat';
+    font-style: normal;
+    opacity: 1;
+}
+.ul-btn{
+    margin-top: 20px;
+    position: absolute;
+    z-index: 11;
+}
+
+/* estilos da section destaques */
+#section-destaques{
+    padding-top: 60px;
+}
+.title-destaque{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #FDB346;
+}
+
+.container-destaques{
+    width: 100%;
+    height: 100vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
   }
-} */
+  .box-3{
+    margin-top: 2rem;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-3 p{
+    margin-top: 20px;
+    width: 607px;
+    text-align: center;
+  }
+  div .linha{
+    width: 70%;
+    height: 1px;
+    background: black;
+    margin-top: 30px;
+    margin-left: 300px; 
+  }
+  .item-1{
+    margin-left: 30px;
+    width: 232px;
+    height: 352px;
+    background: grey;
+  }
+  div .linha-vertical{
+    width: 1px;
+    height: 155px;
+    display: flex;
+    background: black;
+    margin-top: 60px;
+    margin-left: 48px;
+    margin-right: 39px;
+  }
+  .item-2 h2{
+    width: 90%;
+    height: 40px;
+    color: blue;
+    margin-top: 19px;
+  }
+  .item-2 p{
+    margin-top: 40px;
+    margin-bottom: 19px;
+    width: 550px;
+    font-size: 13px;
+    display: flex;
+  }
+  .box-4{
+    margin-left: 220px;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .btn-reserve{
+      background: #d3650b;
+      padding: 8px 16px;
+      border-radius: 4px;
+      outline: none;
+      border: 1px solid #d3650b;
+      color: #fff;
+      cursor: pointer;
+  }
+  .disponivel{
+      width: 80px;
+      height: 80px;
+      background: green;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 10px;
+      border-radius: 4px;
+      margin-top: 174px;
+      margin-left: 64px;
+  
+  }
+  .disponivel h4{
+    font-size: 12px;
+  }
+
+  /* estilos da section visualizações */
+
+
+
+  /* estilos da section parcerias */
+
+.container-parcerias{
+    width: 100%;
+    height: 80vh;
+    background: yellow;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.box-1{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: chartreuse;
+  margin-top: 5rem;
+}
+.box-2{
+  width: 100%;
+  height: 80%;
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.box-item{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background: chocolate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  /* estilos da section footer */
+
+  .footer-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+    height: 25vh;
+    background: #002D70;
+}
+.footer-item{
+    display: flex;
+    gap: 1rem;
+}
+.item-3{
+    background: green;
+    color: wheat;
+}
+
+.item-3-f{
+    width: 30px;
+    height: 30px;
+    background: green;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-3-i{
+    width: 30px;
+    height: 30px;
+    background: red;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-3-t{
+    width: 30px;
+    height: 30px;
+    background: yellow;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info-footer{
+    color: white;
+}

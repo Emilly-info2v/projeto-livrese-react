@@ -5,7 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import HomePage from './components/HomePage';
 import Login from './components/pages/Login';
 import Cadastro from './components/pages/Cadastro';
-import Dashboard from './components/Dashboard';
+import CadastroLivro from './components/pages/CadastroLivro';
+
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
             <Route path='/' element={<HomePage />}/>
             <Route path='/login' element={<Login />}/>
             <Route path='/cadastro' element={<Cadastro />}/>
-            <Route path='/livrese' element={<Dashboard />}/>
+            <Route path='/cadastro-livro' element={<CadastroLivro />}/>
           </Routes>
       </Router>  
     </>
