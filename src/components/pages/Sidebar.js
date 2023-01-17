@@ -9,9 +9,9 @@ function Sidebar() {
 
       <ul className='u1-side'>
            <li><img src={Logo} className='baby' alt='oi'/></li>
-           <li className='side-li'><a href="#">Página Inícial</a> </li>
-           <li className='side-li'><a href="#"> Livros Disponíveis</a></li>
-           <li className='side-li'><a href="#"> Cadastro de Livros</a></li>
+           <li className='side-li'><a href="/#">Página Inícial</a> </li>
+           <li className='side-li'><a href="/#"> Livros Disponíveis</a></li>
+           <li className='side-li'><a href="/#"> Cadastro de Livros</a></li>
        </ul>
       </div>
       </>

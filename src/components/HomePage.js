@@ -10,6 +10,11 @@ import Onda from './imgs/onda.png'
 import Monica from './imgs/monica.png' 
 import Ingles from './imgs/ingles.png' 
 import Harry from './imgs/harry.png' 
+import Trian from './imgs/trian-aval.png' 
+import First from './imgs/first-livro.png' 
+import Second from './imgs/livro-meio.png' 
+import Tercy from './imgs/ultimo-livro.png' 
+import { BsStarFill } from 'react-icons/bs'
 
 function HomePage() {
   return (
@@ -20,7 +25,7 @@ function HomePage() {
         <div className="nav-links"> 
           <ul className="navigation"> 
             <a href="#section-destaques"><li className="nav-items">Destaques</li></a>
-            <a href="#section-3"><li className="nav-items">Avaliações</li></a>
+            <a href="#section-aval"><li className="nav-items">Avaliações</li></a>
             <a href="#section-parcerias"><li className="nav-items">Parcerias</li></a>
             <a href="#footer"><li className="nav-items">Sobre</li></a>
             <Link to='/login'> <li className="nav-btn"> <ButtonIn /></li></Link>
@@ -88,11 +93,72 @@ function HomePage() {
               </div>
           </div>
         </section>
-        
-        <section id="section-3">
-          <h1>avaliaçoes</h1>
+
+{/* section avaliação */}
+        <section id="section-aval">
+          <div className='container-aval'>
+            <img className='img-aval' src={Trian}/>
+            <div className='second-container'>
+              <div className='left-avaliacao'>
+                <div><h1>AVALIAÇÕES</h1></div>
+                <div className='img-books'>
+                  <img className='book1' src={First} alt='book'/>
+                  <img className='book2' src={Second} alt='book'/>
+                  <img className='book3' src={Tercy} alt='book'/>
+                </div>                  
+              </div>
+              <div className='commits'>
+                <div className='box-commits box-commit1'>
+                  <div className='img-user'></div>               
+                  <div className='avaliacao-user'>
+                    <h6>Billie Eilish</h6>
+                    <p>Sed sagittis orci leo, eu suscipit eros, Sed 
+                      sagittis orci leo, eu suscipit eros
+                      Sed sagittis orci leo, eu suscipit eros
+                      Sed sagittis orci leo, eu suscipit eros
+                      Sed sagittis orci leo, eu suscipit eros</p>  
+                      <div className='icons-star'>
+                        <BsStarFill/><BsStarFill/><BsStarFill/><BsStarFill/><BsStarFill/>
+                      </div>
+                  </div>               
+                </div>
+                <div className='box-commits box-commit1'>
+                  <div className='img-user'></div>               
+                  <div className='avaliacao-user'>
+                    <h6>Harry Styles</h6>
+                    <p>Sed sagittis orci leo, eu suscipit eros, Sed 
+                      sagittis orci leo, eu suscipit eros
+                      Sed sagittis orci leo, eu suscipit eros
+                      Sed sagittis orci leo, eu suscipit eros
+                      Sed sagittis orci leo, eu suscipit eros</p>  
+                      <div className='icons-star'>
+                        <BsStarFill/><BsStarFill/><BsStarFill/><BsStarFill/><BsStarFill/>
+                      </div>
+                  </div>               
+                </div>
+                <div className='box-commits box-commit1'>
+                  <div className='img-user'></div>               
+                  <div className='avaliacao-user'>
+                    <h6>Melanie Martinez</h6>
+                    <p>Sed sagittis orci leo, eu suscipit eros, Sed 
+                      sagittis orci leo, eu suscipit eros
+                      Sed sagittis orci leo, eu suscipit eros
+                      Sed sagittis orci leo, eu suscipit eros
+                      Sed sagittis orci leo, eu suscipit eros</p>  
+                      <div className='icons-star'>
+                        <BsStarFill/><BsStarFill/><BsStarFill/><BsStarFill/><BsStarFill/>
+                      </div>
+                  </div>               
+                </div>
+                {/* <div className='box-commits box-commit2'>CAIXA 2</div>
+                <div className='box-commits box-commit3'>CAIXA 3</div> */}
+              </div>
+
+            </div>
+          </div>
         </section>
-        
+
+{/* section parcerias */}
         <section id="section-parcerias">
           <div className='container-parcerias'>
 
@@ -109,8 +175,9 @@ function HomePage() {
 
           </div>
         </section>
-        
     </main>
+
+{/* footer */}
         <footer id="footer">
           <div className='footer-1'> 
             <div className='footer-item'>
