@@ -6,6 +6,7 @@ import HomePage from './components/HomePage';
 import Login from './components/pages/Login';
 import Cadastro from './components/pages/Cadastro';
 import CadastroLivro from './components/pages/CadastroLivro';
+import Sidebar from './components/pages/Sidebar';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Router>
           <Routes>
             <Route path='/' element={<HomePage />}/>
+            <Route path='/sidebar' element={<Sidebar />}/>
             <Route path='/login' element={<Login />}/>
             <Route path='/cadastro' element={<Cadastro />}/>
             <Route path='/cadastro-livro' element={<CadastroLivro />}/>
