@@ -15,42 +15,53 @@
     display: flex;
 }
 .img-logo1{
-    width: 7%;
+    position: fixed;
+    width: 4rem;
 }
 .image{
     position: relative;
     width: 50%;
     height: 100%;
-    /* background: red; */
+    background: #002D70;
     z-index: 1;
     display: flex;
     align-items: center;
+    margin-top: 40px;
     justify-content: center;
+    
+}
+.fundo nav{
+    position: fixed;
+    padding-left: 4rem;
 }
 .logo-livrese img{
     width: 337px;
     height: 337px;
 }
+
 .form {
     position: relative;
     width: 50%;
     height: 100%;
-    background: green;
+    margin-top: 40px;
+    background: #002D70;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 2;
 }
-.form-fundo h4{
-    margin-right: 10rem;
+.form-fundo h5{
+    margin: auto;
 }
 .form-fundo span{
-    margin-top: 0.5rem;
+    margin: auto;
     color: black;
+    font-size: 10pt;
 }
 .form-fundo{
     width: 360px;
     height: 75%;
+    border-radius: 20px;
     background: white;
     display: flex;
     align-items: center;
@@ -67,8 +78,8 @@
     border-radius: 5px;
     padding: 1rem;
     font-size: 17px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 .inputs-cadastre{
     display: flex;
@@ -82,9 +93,10 @@
     border-radius: 5px;
 }
 .btn-cadastre{
+    width: 8rem;
     border: none;
     margin-top: 0.4rem;
-    margin-left: 16rem;
+    margin-left: 9rem;
     padding: 0.5rem;
     border-radius: 7px;
     background: #F58037;
@@ -98,10 +110,11 @@
     justify-content: center;
     gap: 1rem;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 50px;
     width: 100%;
-    height: 25vh;
+    height: 23rem;
     background: #002D70;
+    position: fixed;
 }
 .footer-item{
     display: flex;

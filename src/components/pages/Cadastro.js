@@ -1,6 +1,6 @@
 import React from 'react'
-// import { MdEmail, MdLock } from 'react-icons/md'
-import { HiEyeOff, HiEye } from "react-icons/hi";
+import { AiFillTwitterCircle } from 'react-icons/ai'
+import { BsFacebook } from "react-icons/bs";
 // import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Logo from './../imgs/logo-livrese.jpeg'
@@ -24,7 +24,7 @@ function Cadastro() {
 
           <div className='form'>
             <div className='form-fundo'>
-                      <h4>Cadastre - se</h4>
+                      <h5>Faça seu cadastro no Livre - se</h5>
               <div className='inputs-cadastre'>
                 <input
                 type='text'
@@ -40,7 +40,7 @@ function Cadastro() {
               <div className='inputs-cadastre'>
                 <input
                 type='text'
-                placeholder='dd/mm/aaaa'
+                placeholder='Data do seu nascimento'
                 />
               </div>
               <div className='inputs-cadastre'>
@@ -55,7 +55,7 @@ function Cadastro() {
                 placeholder='Crie uma senha'
                 />
               </div>
-              <button className='btn-cadastre' type='Submit'>Submit</button>
+              <button className='btn-cadastre' type='Submit'>Pronto</button>
               <span>Já possui cadastro? <Link to='/login'>Entre com seu login</Link></span>
             </div>
           </div>
