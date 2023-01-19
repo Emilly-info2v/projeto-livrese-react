@@ -15,6 +15,12 @@ import First from './imgs/first-livro.png'
 import Second from './imgs/livro-meio.png' 
 import Tercy from './imgs/ultimo-livro.png' 
 import { BsStarFill } from 'react-icons/bs'
+import { BsFacebook } from 'react-icons/bs'
+import { AiFillTwitterCircle, AiFillInstagram } from 'react-icons/ai'
+import P1 from './imgs/P1.png' 
+import P2 from './imgs/P2.png' 
+import P3 from './imgs/P3.png' 
+import P4 from './imgs/P4.png' 
 
 function HomePage() {
   return (
@@ -167,10 +173,10 @@ function HomePage() {
             </div>
 
             <div className='box-2'>
-              <div className='box-item'>BOLA 1</div>
-              <div className='box-item'>BOLA 2</div>
-              <div className='box-item'>BOLA 3</div>
-              <div className='box-item'>BOLA 4</div>
+              <div className='box-item'><img src={P1}/></div>
+              <div className='box-item'><img src={P2}/></div>
+              <div className='box-item'><img src={P3}/></div>
+              <div className='box-item'><img src={P4}/></div>
             </div>
 
           </div>
@@ -178,7 +184,7 @@ function HomePage() {
     </main>
 
 {/* footer */}
-        <footer id="footer">
+        {/* <footer id="footer">
           <div className='footer-1'> 
             <div className='footer-item'>
               <div className='item-3-f'>F</div>
@@ -187,7 +193,7 @@ function HomePage() {
             </div>
             <div className='info-footer'>Info • Suporte</div>
           </div>
-        </footer>
+        </footer> */}
     </>
   )
 }

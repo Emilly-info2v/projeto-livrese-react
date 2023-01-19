@@ -145,6 +145,8 @@ nav{
     padding-top: 60px;
 }
 .title-destaque{
+    font-family: 'Averia Libre';
+    font-size: 40pt;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -362,7 +364,7 @@ nav{
 .container-parcerias{
     width: 100%;
     height: 80vh;
-    background: yellow;
+    background: #FED289;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -372,8 +374,11 @@ nav{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: chartreuse;
   margin-top: 5rem;
+}
+.box-1 h1{
+  font-family: 'Averia Libre';
+  font-size: 40pt;
 }
 .box-2{
   width: 100%;
@@ -396,52 +401,11 @@ nav{
 
   /* estilos da section footer */
 
-  .footer-1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    flex-direction: column;
-    width: 100%;
-    height: 25vh;
+  footer{
     background: #002D70;
-}
-.footer-item{
-    display: flex;
-    gap: 1rem;
-}
-.item-3{
-    background: green;
-    color: wheat;
-}
-
-.item-3-f{
-    width: 30px;
-    height: 30px;
-    background: green;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.item-3-i{
-    width: 30px;
-    height: 30px;
-    background: red;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.item-3-t{
-    width: 30px;
-    height: 30px;
-    background: yellow;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.info-footer{
+  }
+  footer svg{
     color: white;
-}
+  }
+
+  

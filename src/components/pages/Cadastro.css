@@ -34,6 +34,11 @@
     position: fixed;
     padding-left: 4rem;
 }
+.logo-livrese{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .logo-livrese img{
     width: 337px;
     height: 337px;
@@ -128,7 +133,6 @@
 .item-3-f{
     width: 30px;
     height: 30px;
-    background: green;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -137,7 +141,6 @@
 .item-3-i{
     width: 30px;
     height: 30px;
-    background: red;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -146,7 +149,6 @@
 .item-3-t{
     width: 30px;
     height: 30px;
-    background: yellow;
     border-radius: 20px;
     display: flex;
     align-items: center;

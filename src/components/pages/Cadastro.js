@@ -1,5 +1,5 @@
 import React from 'react'
-import { AiFillTwitterCircle } from 'react-icons/ai'
+import { AiFillTwitterCircle, AiFillInstagram} from 'react-icons/ai'
 import { BsFacebook } from "react-icons/bs";
 // import { useState } from 'react'
 import { Link } from 'react-router-dom'
@@ -63,9 +63,9 @@ function Cadastro() {
         </div>
         <div className='footer-1'> 
           <div className='footer-item'>
-            <div className='item-3-f'>F</div>
-            <div className='item-3-i'>I</div>
-            <div className='item-3-t'>T</div>
+            <div className='item-3-f'><BsFacebook/></div>
+            <div className='item-3-i'><AiFillInstagram/></div>
+            <div className='item-3-t'><AiFillTwitterCircle/></div>
           </div>
           <div className='info-footer'>Info • Suporte</div>
         </div>
