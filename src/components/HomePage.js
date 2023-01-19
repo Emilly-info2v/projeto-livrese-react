@@ -21,6 +21,10 @@ import P1 from './imgs/P1.png'
 import P2 from './imgs/P2.png' 
 import P3 from './imgs/P3.png' 
 import P4 from './imgs/P4.png' 
+import Destaque from './imgs/photoDest.png' 
+import BolaL from './imgs/leftGrey.png' 
+import BolaR from './imgs/rightBlue.png' 
+import Photo from './imgs/photoCoffe.png' 
 
 function HomePage() {
   return (
@@ -67,6 +71,32 @@ function HomePage() {
           </div>
           <div className='container-onda'>
             <img className='img-onda' src={Onda} alt='onda'/>
+            <div className='onda'>
+              <div className='left-onda'>
+                <div className='img-left-onda'>
+                  <img src={Photo} alt='coffe'/> 
+                </div>
+              </div>
+              <div className='right-onda'>
+                  <div className='img-right-onda'>
+                      <h3>COMO FUNCIONA?</h3>
+                      <p>
+                        O livre-se é um site colaborativo que funciona como 
+                        uma biblioteca virtual para doações de livros, você 
+                        pode procurar por algum livro que deseja obter, 
+                        entrar em contato com o doador mais próximo e ir até 
+                        ele. Ou, você poderá cadastrar livros que deseja doar.
+                        </p>
+                  </div>
+                  <div className='img-right-onda1'> 
+                       <h3>QUAL O OBJETIVO?</h3>
+                       <p>O objetivo principal do livre-se 
+                        é facilitar o processo de doação de 
+                        livros de uma forma tecnológica e inovadora, 
+                        buscando proporcionar ao usuário facilidade, simplicidade e agilidade.</p>
+                  </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -81,7 +111,13 @@ function HomePage() {
               </div>
                   <div className='linha'></div>
                   <div className='box-4'>
-                        <div className='item-1'></div> 
+                        <div className='item-1'>
+                          <img src={Destaque}/>
+                          <div className='bolinha'> 
+                            <img className='bolinha1' src={BolaL}/>
+                            <img className='bolinha2' src={BolaR}/>
+                          </div>
+                        </div> 
                         <div className='linha-vertical'></div>
                         <div className='item-2'>
                           <h2>PERCY JACKSON E O MAR DE MONSTROS</h2>
@@ -181,19 +217,19 @@ function HomePage() {
 
           </div>
         </section>
+{/* footer */}
+        <section id="footer">
+          <div className='boxx'> 
+            <div className='boxx-item'>
+              <div className='iten-3-f'><BsFacebook color="white" fontSize="3.5rem"/></div>
+              <div className='iten-3-i'><AiFillTwitterCircle color="white" fontSize="4rem"/></div>
+              <div className='iten-3-t'><AiFillInstagram color="white" fontSize="4rem"/></div>
+            </div>
+            <div className='info'>Info • Suporte</div>
+          </div>
+        </section>
     </main>
 
-{/* footer */}
-        {/* <footer id="footer">
-          <div className='footer-1'> 
-            <div className='footer-item'>
-              <div className='item-3-f'>F</div>
-              <div className='item-3-i'>I</div>
-              <div className='item-3-t'>T</div>
-            </div>
-            <div className='info-footer'>Info • Suporte</div>
-          </div>
-        </footer> */}
     </>
   )
 }

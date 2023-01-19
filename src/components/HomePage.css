@@ -10,9 +10,7 @@
 .nav-links a{
   text-decoration: none;
   color: black;
-  
 }
-
 nav{
   position: fixed;
   width: 100%;
@@ -74,13 +72,13 @@ nav{
 .container-text{
     margin-top: 132px;
     position: relative;
-    width: 50%;
+    width: 80em;
     margin-left: 312px;
     height: 100%;
     z-index: 10;
 }
 .container-imgs{
-    width: 50%;
+    width: 900px;
     height: 100%;
     display: flex;
 
@@ -88,8 +86,8 @@ nav{
 .img-monica,
 .img-ingles,
 .img-harry{
-    width: 20%;
-    height: 50%;
+    width: 10rem;
+    height: 14rem;
     z-index: 10;
 }
 .img-monica{
@@ -103,19 +101,111 @@ nav{
 }
 .img-library{
     position: absolute;
-    width: 100%;
-    height: 70%;
+    width: 120rem;
+    height: 50rem;
     z-index: 1;
 }
 .container-onda{
-    width: 100%;
-    height: 50%;
+    width: 120rem;
+    height: 31rem;
 }
 .img-onda{
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 35rem;
+    top: -3rem;
     z-index: 16;
+}
+.onda{
+  position: relative;
+  z-index: 40;
+  top: -30rem;
+  width: 200rem;
+  height: 23rem;
+  /* background: red; */
+  display: flex;
+}
+.left-onda{
+  width: 50vw;
+  height: 23rem;
+  /* background: green; */
+  display: flex;
+  justify-content: center;
+}
+.right-onda{
+  width: 50vw;
+  height: 23rem;
+  /* background: lightblue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.img-left-onda{
+  width: 27rem;
+  height: 19rem;
+  background: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30rem;
+}
+.img-left-onda img{
+  width: 25rem;
+}
+.img-right-onda,
+.img-right-onda1{
+  width: 350px;
+  height: 214px;
+  border-radius: 20px;
+  margin-left: 2rem;
+}
+.img-right-onda{
+  background: #254A7F;
+  padding: 2px 2px 10px 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.img-right-onda1{
+  background: #254A7F;
+  padding: 2px 2px 10px 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+.img-right-onda h3{
+  font-family: 'Averia Libre';
+  color: white;
+  margin-top: 5px;
+}
+.img-right-onda p{
+  width: 20rem;
+  color: white;
+  font-size: 10pt;
+  margin-left: 1rem;
+  margin-bottom: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+
+}
+.img-right-onda1 h3{
+  font-family: 'Averia Libre';
+  color: white;
+}
+.img-right-onda1 p{
+  width: 20rem;
+  color: white;
+  font-size: 10pt;
+  margin: 0;
+  margin-left: 1rem;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
 }
 .text-h1{
     display: flex;
@@ -139,7 +229,7 @@ nav{
     position: absolute;
     z-index: 11;
 }
-
+/* @media screen and (max-width: ) */
 /* estilos da section destaques */
 #section-destaques{
     padding-top: 60px;
@@ -178,7 +268,7 @@ nav{
   div .linha{
     width: 70%;
     height: 1px;
-    background: black;
+    background: grey;
     margin-top: 30px;
     margin-left: 300px; 
   }
@@ -187,12 +277,20 @@ nav{
     width: 232px;
     height: 352px;
     background: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+.bolinha1,
+.bolinha2{
+  margin-top: 1rem;
+  cursor: pointer;
+}
   div .linha-vertical{
     width: 1px;
     height: 155px;
     display: flex;
-    background: black;
+    background: grey;
     margin-top: 60px;
     margin-left: 48px;
     margin-right: 39px;
@@ -200,8 +298,9 @@ nav{
   .item-2 h2{
     width: 90%;
     height: 40px;
-    color: blue;
+    color: black;
     margin-top: 19px;
+    font-family: 'Averia Libre';
   }
   .item-2 p{
     margin-top: 40px;
@@ -217,18 +316,18 @@ nav{
     gap: 1rem;
   }
   .btn-reserve{
-      background: #d3650b;
+      background: #002D70;
       padding: 8px 16px;
       border-radius: 4px;
       outline: none;
-      border: 1px solid #d3650b;
+      border: 1px solid #002D70;
       color: #fff;
       cursor: pointer;
   }
   .disponivel{
       width: 80px;
       height: 80px;
-      background: green;
+      background: #002D70;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -239,8 +338,13 @@ nav{
       margin-left: 64px;
   
   }
+  .disponivel h1{
+    font-family: 'Averia Libre';
+    color: white;
+  }
   .disponivel h4{
     font-size: 12px;
+    color: white;
   }
 
   /* estilos da section visualizações */
@@ -400,12 +504,36 @@ nav{
 }
 
   /* estilos da section footer */
+/* #footer{
+  width: 100vw;
+  height: 20rem;
+  background: #002D70;
 
-  footer{
-    background: #002D70;
-  }
-  footer svg{
-    color: white;
-  }
+} */
+.boxx{
+  width: 100vw;
+  height: 20rem;
+  background: #002D70;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.boxx-item{
+  display: flex;
+  gap: 1rem;
+}
 
-  
+.iten-3-f,
+.iten-3-i,
+.iten-3-t{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+.info{
+  color: white;
+}
