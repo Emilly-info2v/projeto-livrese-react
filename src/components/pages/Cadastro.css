@@ -118,7 +118,7 @@
     margin-top: 50px;
     width: 100%;
     height: 23rem;
-    background: #002D70;
+    background: #001d49;
     position: fixed;
 }
 .footer-item{
@@ -155,5 +155,5 @@
     justify-content: center;
 }
 .info-footer{
-    color: wheat;
+    color: white;
 }

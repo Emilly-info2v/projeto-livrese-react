@@ -1,67 +1,59 @@
 import React from 'react'
-import { MdEmail, MdLock } from 'react-icons/md'
-import { HiEyeOff, HiEye } from "react-icons/hi";
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Logo from'./../imgs/logo-livrese.jpeg'
 import './Login.css'
+import LogoWhite from './../imgs/logo-branca.png'
+import {BsFacebook} from 'react-icons/bs'
+import {AiFillInstagram, AiFillTwitterCircle} from 'react-icons/ai'
+import {HiUserCircle} from 'react-icons/hi'
 
 function Login() {
-  const [email,setEmail] = useState("")
-  const [password,setPassword] = useState("")
-  const [show,setShow] = useState(false)
-
-  const handleClick = (e) => {
-    e.preventDefault()
-    setShow(!show)
-  }
-
   return (
-    <> 
-      <div className='login'>
-        <div className='img-logo'>
-          <img src={Logo} alt="Livre -se"/>
-        </div>
+    <>
+      <div className='section'>
+        <div className='fundo'>
+        <nav><img className='img-logo1' src={Logo} /></nav>
 
-          <div className='login-right'>
-                    <h2>Entre com o seu login</h2>
-            <div className='loginInputEmail'>
-              <MdEmail />
-              <input
-              type='text'
-              placeholder='Digite o seu e-mail'
-              valeu={email}
-              onChange={e => setEmail(e.target.value)}
-              />
+        <div className='tela-login'>
+
+          <div className='image'>
+            <div className='logo-livrese'>
+              <img src={LogoWhite} alt='livre'/>
             </div>
-            
-            <div className='loginInputPassword'>
-              <MdLock/>
-              <input
-              type={show ? 'text' : 'password'}
-              placeholder='Digite a sua senha'
-              valeu={password}
-              onChange={e => setPassword(e.target.value)}
-              />
-              <div className='login-eye'>
-                {show ? (
-                  <HiEye onClick={handleClick}/>
-                ) : (
-                  <HiEyeOff onClick={handleClick}/>
-                )}
-              </div>
-            </div>
-
-            <button type='submit'>
-              Entrar
-            </button>
-
-            <div className='text-center'>
-              <span className='txt-1'>Não tenho uma conta? </span>
-              <Link to='/cadastro'className='txt-2'>Criar conta </Link>
-            </div>
-
           </div>
+
+          <div className='form'>
+            <div className='form-fundo'>
+                      <div className='title-login'><h5>Entre com seu login</h5></div>
+
+                <div><HiUserCircle color="#001d49" fontSize="10rem"/></div>
+              <div className='inputs-cadastre'>
+                <input
+                type='text'
+                placeholder='Digite seu email'
+                />
+              </div>
+              <div className='inputs-cadastre'>
+                <input
+                type='text'
+                placeholder='Crie uma senha'
+                />
+              </div>
+              <button className='btn-cadastre' type='Submit'>Pronto</button>
+              <span>Já possui cadastro? <Link to='/login'>Entre com seu login</Link></span>
+            </div>
+          </div>
+
+        </div>
+        <div className='footer-1'> 
+          <div className='footer-item'>
+            <div className='item-3-f'><BsFacebook color="white" fontSize="3.5rem"/></div>
+            <div className='item-3-i'><AiFillInstagram color="white" fontSize="3.5rem"/></div>
+            <div className='item-3-t'><AiFillTwitterCircle color="white" fontSize="3.5rem"/></div>
+          </div>
+          <div className='info-footer'>Info • Suporte</div>
+        </div>
+        </div>
       </div>
     </>
   )

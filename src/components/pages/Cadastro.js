@@ -63,9 +63,9 @@ function Cadastro() {
         </div>
         <div className='footer-1'> 
           <div className='footer-item'>
-            <div className='item-3-f'><BsFacebook/></div>
-            <div className='item-3-i'><AiFillInstagram/></div>
-            <div className='item-3-t'><AiFillTwitterCircle/></div>
+            <div className='item-3-f'><BsFacebook color="white" fontSize="3.5rem"/></div>
+            <div className='item-3-i'><AiFillInstagram color="white" fontSize="3.5rem"/></div>
+            <div className='item-3-t'><AiFillTwitterCircle color="white" fontSize="3.5rem"/></div>
           </div>
           <div className='info-footer'>Info • Suporte</div>
         </div>
