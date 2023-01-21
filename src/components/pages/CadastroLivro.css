@@ -1,7 +1,7 @@
 .container-cadLivro{
     width: 100%;
     height: 100vh;
-    background: green;
+    background: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,15 +11,18 @@
     width: 70%;
     height: 50%;
     padding: 3rem;
-    background: grey;
+    background: #313A87;
     border-radius: 8px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 .anexo-img{
     width: 150px;
     height: 200px;
-    background: red;
+    background: grey;
+    margin-top: 3.5rem;
+    margin-left: 3.5rem;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,7 +30,7 @@
 .info-livro{
     width: 60%;
     height: 20rem;
-    background: blue;
+    background: #313A87;
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -64,5 +67,6 @@
     margin-bottom: 1rem;
 }
 .title-submit{
-    color: white;
+    color: black;
+    font-family: 'Averia Libre';
 }

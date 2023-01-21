@@ -7,6 +7,7 @@ import Login from './components/pages/Login';
 import Cadastro from './components/pages/Cadastro';
 import CadastroLivro from './components/pages/CadastroLivro';
 import Perfil from './components/pages/Perfil';
+import Dashboard from './components/pages/Dashboard';
 // import Sidebar from './components/pages/Sidebar';
 
 
@@ -18,8 +19,10 @@ function App() {
             <Route path='/' element={<HomePage />}/>
             <Route path='/login' element={<Login />}/>
             <Route path='/cadastro' element={<Cadastro />}/>
-            <Route path='/cadastro-livro' element={<CadastroLivro />}/>
             <Route path='/user' element={<Perfil />}/>
+
+            <Route path='/dashboard' element={<Dashboard />}/>
+            <Route path='/cadastro-livro' element={<CadastroLivro />}/>
           </Routes>
       </Router> 
     </>

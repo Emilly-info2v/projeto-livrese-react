@@ -1,8 +1,13 @@
 import React, {useState} from 'react'
+import {Link} from 'react-router-dom'
 import './CadastroLivro.css'
+import {HiUserCircle} from 'react-icons/hi'
+import Logo from'./../imgs/logo-livrese.jpeg'
+import Anexa from'./../imgs/anexar.png'
 //import { useNavigate } from "react-router-dom";
 
 // import api from '../api';
+import Sidebar from '../Sidebar'
 
 function CadastroLivro() {
   // const navigate = useNavigate();
@@ -17,12 +22,25 @@ function CadastroLivro() {
       //api.post(`posts`,{text:text}).then(()=>navigate("/read"))
      }
   return (
-    <>    
+    <>
+    <nav>
+        <a href="#section-home"><img className="baby" src={Logo} alt='livre -se'/></a> 
+        
+        <div className="nav-limks"> 
+          <ul className="navig"> 
+          <Link to='/user'><li className="nav-itens"><HiUserCircle fontSize="3.5rem"/></li></Link>
+            <a href="#"><li className="nav-itens"><HiUserCircle fontSize="3.5rem"/></li></a>
+          </ul>
+        </div>
+      </nav>
+
+    <div className='desktop-grid'>    
+      <Sidebar />
       <div className='container-cadLivro'>
         
             <h1 className='title-submit'>Cadastre seu livro</h1>
         <form className='cadastro-livro' onSubmit={ handleSubmit }>
-            <div className='anexo-img'>ANEXAR FOTO</div>
+             <div className='anexo-img'><img src={Anexa} alt=''/></div>
 
             <div className='info-livro'>
                 <div className='box-input-label'>
@@ -53,6 +71,7 @@ function CadastroLivro() {
         </form>
 
       </div>
+    </div>
     </>
 
   )
