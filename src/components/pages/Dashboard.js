@@ -111,11 +111,25 @@ function Dashboard() {
                   filho de Poseidon é uma honra ou uma terrível maldição.</p>
                   <button className='btn-reserve1'>Reservar</button>
               </div>
-            <div className='mensage'>
-              <div></div>
+              <div className='mensage'>
+                <h1>Chathgggggggggggg</h1>
+                <h1>Chathgggggggggggg</h1>
+                <h1>Chathgggggggggggg</h1>
+                <h1>Chathgggggggggggg</h1>
+                <h1>Chathgggggggggggg</h1>
+                <h1>Chathgggggggggggg</h1>
+                <h1>Chathgggggggggggg</h1>
+                <h1>Chathgggggggggggg</h1>
+              </div>
             </div>
-            </div>
-
+          </div>
+          <div className='historic'>
+            <div className=''>Histórico</div>
+            <div className='items-photo-hist'>
+                  <div className='photo-his'></div>       
+                  <div className='photo-his'></div>       
+                  <div className='photo-his'></div>   
+            </div>     
           </div>
         </div>
       </div>
