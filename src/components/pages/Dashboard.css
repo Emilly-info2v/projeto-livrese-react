@@ -66,7 +66,8 @@
 }
 .disp-first p{
     text-align: center;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.9rem;
 }
 .disp-first button{
     background: #002D70;
@@ -74,6 +75,7 @@
     border-radius: 5px;
     padding: 5px;
     color: white;
+ 
     width: 6rem;
 }
 
@@ -127,7 +129,8 @@
 }
 .disp-quart p{
     text-align: center;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.9rem;
 }
 .disp-quart button{
     background: #002D70;
@@ -137,8 +140,67 @@
     color: white;
     width: 6rem;
 }
-
-/* .disp-second{
-    width: 12rem;
-    height: 17rem;
-} */
+    .chat{
+        width: 90rem;
+        height: 70rem;
+        margin-top: 3rem;
+        /* background-color: lightblue; */
+    }
+    .informacao-livro1{
+        width: 60rem;
+        height: 40rem;
+        /* background: lightcoral; */
+        display: flex;
+        margin-top: 3rem;
+        gap: 4rem;
+    }
+    .informacao-livro1 img{
+        width: 11rem;
+        margin-left: 5rem;
+    }
+    .text-info-livro1 h2{
+        margin-top: 3rem;
+        width: 20rem;
+        font-family: 'Averia Libre';
+    }
+    .text-info-livro1 p{
+        width: 28rem;
+    }
+    .btn-reserve1{
+        background: #002D70;
+        padding: 5px 16px;
+        margin-left: 20rem;
+        border-radius: 4px;
+        outline: none;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+    }
+    .livro-arrow{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .setas{
+        margin-top: 1rem;
+        margin-left: 5rem;
+        display: flex;
+        gap: 1rem;
+    }
+    .icons2{
+        margin-top: 1rem;
+        margin-left: 5rem;
+        display: flex;
+        gap: 2rem;
+        
+    }
+    .icon-filho{
+        background: orange;
+        padding: 5px;
+        border-radius: 1rem;
+    }
+    .mensage{
+        width: 50rem;
+        height: 25rem;
+        background: lightcoral;
+    }

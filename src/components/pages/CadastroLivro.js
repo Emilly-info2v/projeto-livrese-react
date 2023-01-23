@@ -4,6 +4,7 @@ import './CadastroLivro.css'
 import {HiUserCircle} from 'react-icons/hi'
 import Logo from'./../imgs/logo-livrese.jpeg'
 import Anexa from'./../imgs/anexar.png'
+import { ImExit } from "react-icons/im";
 //import { useNavigate } from "react-router-dom";
 
 // import api from '../api';
@@ -29,7 +30,7 @@ function CadastroLivro() {
         <div className="nav-limks"> 
           <ul className="navig"> 
           <Link to='/user'><li className="nav-itens"><HiUserCircle fontSize="3.5rem"/></li></Link>
-            <a href="#"><li className="nav-itens"><HiUserCircle fontSize="3.5rem"/></li></a>
+          <Link to="/"><li className="nav-itens"><ImExit color='#002D70' fontSize="2.7rem"/></li></Link>
           </ul>
         </div>
       </nav>

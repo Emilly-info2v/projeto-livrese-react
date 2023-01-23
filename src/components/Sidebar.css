@@ -17,10 +17,8 @@
 
 .sidebar ul a {
     border-width: 2rem;
-    border-bottom: 1px solid #313A87;
+    border-bottom: 0.5px solid #313A87;
     text-decoration: none;
-    border-width: 2rem;
-    border-bottom: 1px solid #313A87;
     display: block;
 }
 

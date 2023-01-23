@@ -8,6 +8,11 @@ import Harry from './../imgs/harry.png'
 import Monica from './../imgs/monica.png' 
 import Ingles from './../imgs/ingles.png' 
 import Colorido from './../imgs/livro-meio.png' 
+import { ImExit } from "react-icons/im";
+import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from "react-icons/bs";
+import { FaPhoneAlt } from "react-icons/fa";
+import Destaque from './../imgs/photoDest.png' 
+
 
 function Dashboard() {
   return (
@@ -17,9 +22,8 @@ function Dashboard() {
         
         <div className="nav-limks"> 
           <ul className="navig"> 
-            <Link to='/user'><li className="nav-itens"><HiUserCircle fontSize="3.5rem"/></li></Link>
-            <a href="#"><li className="nav-itens"><HiUserCircle fontSize="3.5rem"/></li></a>
-          </ul>
+            <Link to='/user'><li className="nav-itens"><HiUserCircle color='#002D70' fontSize="3.5rem"/></li></Link>
+            <Link to="/"><li className="nav-itens"><ImExit color='#002D70' fontSize="2.7rem"/></li></Link>          </ul>
         </div>
       </nav>
       <div className='desktop-grid'>
@@ -49,7 +53,6 @@ function Dashboard() {
               <div className='book-disp'>
                 <div className='title-disp'>Livros disponíveis</div>
                 <div className='imgs-disp'>
-
                     <div className='list-disp disp-first'>
                       <img src={Harry} alt=''/>
                       <div className='disp-first'>
@@ -81,9 +84,38 @@ function Dashboard() {
                         <button>Reservar</button>
                       </div>
                     </div>
-
                 </div>
               </div>
+          </div>
+
+          <div className='chat'>
+            <div className='informacao-livro1'>
+              <div className='livro-arrow'>
+                <img src={Destaque} alt=''/>
+                <div className='setas'>
+                  <BsFillArrowLeftCircleFill color='grey' fontSize='2rem'/>
+
+                  <BsFillArrowRightCircleFill color='#002D70' fontSize='2rem'/>
+
+                </div>                
+                  <div className='icons2'>
+                    <FaPhoneAlt className='icon-filho' color='grey' fontSize='2rem'/>
+                  </div>
+              </div>
+              <div className='text-info-livro1'>
+                <h2>PERCY JACKSON E O MAR DE MONSTROS</h2>
+                <p>nossos heróis partem em uma arriscada e incrível viagem pelo Mar de Monstros, 
+                  localizado nas coordenadas 30-31-75-12: uma referência ao Triângulo das Bermudas.
+                  Lá, enfrentam seres fantásticos e muitos perigos e situações inusitadas, que 
+                  põem à prova seu heroísmo e sua herança – quando Percy irá questionar se ser 
+                  filho de Poseidon é uma honra ou uma terrível maldição.</p>
+                  <button className='btn-reserve1'>Reservar</button>
+              </div>
+            <div className='mensage'>
+              <div></div>
+            </div>
+            </div>
+
           </div>
         </div>
       </div>

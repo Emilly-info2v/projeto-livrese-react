@@ -42,12 +42,12 @@ function Login() {
               </div>
               <div className='inputs-cadastre'>
                 <input
-                type='text'
+                type='password'
                 placeholder='Crie uma senha'
                 />
               </div>
               <button className='btn-cadastre' type='Submit' onClick={handleLogin}>Pronto</button>
-              <span>Já possui cadastro? <Link to='/login'>Entre com seu login</Link></span>
+              <span>Não possui cadastro? <Link to='/cadastro'>Entre com seu login</Link></span>
             </div>
           </div>
 

@@ -51,7 +51,7 @@ function Cadastro() {
               </div>
               <div className='inputs-cadastre'>
                 <input
-                type='text'
+                type='password'
                 placeholder='Crie uma senha'
                 />
               </div>
